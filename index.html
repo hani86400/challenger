@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images and Files</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        pre {
+            font-family: "Courier New";
+            text-align: left;
+            margin: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 9px solid #ccc;
+        }
+
+        .files {
+            margin-top: 30px;
+        }
+
+        .files a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+        <img src="files/ce_au.png" alt="ce_au.png">
+        <img src="files /MazeCraze.png" alt="MazeCraze.png">
+        <img src="files/red_circle.jpeg" alt="red_circle.jpeg">
+        <img src="files/palm.png" alt="palm.png">
+
+    </div>
+
+    <div class="files">
+        <h2>Documents and Archive</h2>
+        <a href="files/abc.pdf" target="_blank">Open PDF Document</a>
+        <a href="files/sun.zip" download>Download ZIP Archive</a>
+    </div>
+<pre>
+
+
+abc.pdf         # be1c024cc2f391b9c2e70fb114200f5b
+ce_au.png       # 2096b13775af1948bf383172819a48b4
+MazeCraze.png   # ac830d5bdf19b037a7531d470d068141  
+palm.png        # d3af68e14e79ce9d0b4bdfd8d6cf76d9
+red_circle.jpeg # f860d17ade1d4f353b7f6f96c5054342
+sun.zip         # d556558472cc0c224f016a3bd12342cf
+
+
+
+</pre>
+</body>
+</html>

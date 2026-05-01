@@ -1,0 +1,15 @@
+name: UI_OUPUT
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print formatted summary
+        run: |
+          echo "## 🔹 Demo Output"                 >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Line 1: Everything is fine"   >> $GITHUB_STEP_SUMMARY
+          echo "- ⚠️ Line 2: Something suspicious" >> $GITHUB_STEP_SUMMARY
+          echo "- ❌ Line 3: Definitely broken"    >> $GITHUB_STEP_SUMMARY
